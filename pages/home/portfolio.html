@@ -1,0 +1,320 @@
+<head>
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+  <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet" />
+  <!-- <link rel="stylesheet" href="./dist/css/custom.css"> -->
+</head>
+
+<style>
+  @import url("https://fonts.cdnfonts.com/css/chillax");
+  :root {
+    --blue: #5f85db;
+    --gray: #1e1e1f;
+  }
+
+  .portfolio {
+    font-family: "Poppins", sans-serif;
+    background: #121212;
+    scroll-behavior: smooth;
+
+    .fw-bold {
+      font-weight: 700 !important;
+    }
+
+    .text-light-emphasis {
+      color: #495057 !important;
+    }
+
+    .fs-5 {
+      font-size: 1.25rem !important;
+    }
+
+    .line {
+      width: 50px;
+      height: 2px;
+      background: var(--blue);
+      align-self: center;
+      border-radius: 50px;
+      margin: 0;
+    }
+    element.style {
+      margin-bottom: 0px;
+    }
+    p {
+      margin: 0;
+    }
+    h2 {
+      margin: 0;
+    }
+
+    nav {
+      background: #12121250;
+      height: 89px;
+      backdrop-filter: blur(10px);
+    }
+    .navbar-brand {
+      color: var(--blue);
+      transition: 0.5s ease;
+    }
+    nav img {
+      height: 35px;
+      filter: invert(100%);
+      transition: 0.5s ease;
+    }
+    nav img:hover {
+      filter: invert(70%);
+      transition: 0.5s ease;
+    }
+
+    .home {
+      padding: 6rem 10rem 0;
+      height: 100vh;
+    }
+    .home .text {
+      width: 300px;
+    }
+    .home p {
+      color: var(--blue);
+      margin: 0 0 5px 0;
+      display: flex;
+    }
+    .home span {
+      font-size: 24px;
+      background-image: linear-gradient(
+        to right,
+        #fff,
+        var(--blue)
+      ); /* Warna gradient horizontal */
+      -webkit-background-clip: text; /* Menggunakan efek latar belakang pada teks */
+      background-clip: text;
+      color: transparent; /* Membuat teks asli transparan */
+    }
+    .home p span {
+      color: #fff;
+      font-size: 15px;
+    }
+    .wave {
+      animation-name: wave-animation;
+      animation-duration: 2.5s;
+      animation-iteration-count: infinite;
+      transform-origin: 70% 70%;
+      display: inline-block;
+    }
+    .home h1 {
+      font-weight: 700;
+    }
+    .home .dec {
+      margin: 11px 0 0 0;
+    }
+    .home img {
+      height: 60vh;
+      border-radius: 50%;
+      border: var(--blue) 4px solid;
+      box-shadow: var(--blue) 0px 0px 70px;
+    }
+
+    .about-me {
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 43px;
+      background: var(--gray);
+    }
+    .about-me .line {
+      width: 330px;
+    }
+    .about-me-title {
+      margin: 0 0 19px;
+    }
+    .about-me-box img {
+      width: 360px;
+      height: 360px;
+      border-radius: 50%;
+      margin: 0 50px;
+    }
+    .about-text p {
+      font-size: 18px;
+      margin: 0;
+    }
+
+    .skills .line {
+      width: 87px;
+    }
+    .menu-box-buka {
+      background: #5f84db2b;
+      color: var(--blue) !important;
+    }
+    .menu-box-buka a {
+    }
+    .menu-box:hover {
+      color: #fff !important;
+      transition: 0.3s ease;
+    }
+    .menu-box a {
+      color: #ffffff40;
+      transition: 0.3s ease;
+    }
+
+    footer a {
+      color: #ffdb70;
+    }
+
+    @keyframes wave-animation {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      10% {
+        transform: rotate(14deg);
+      }
+      20% {
+        transform: rotate(-8deg);
+      }
+      30% {
+        transform: rotate(14deg);
+      }
+      40% {
+        transform: rotate(-4deg);
+      }
+      50% {
+        transform: rotate(10deg);
+      }
+      60% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(0deg);
+      }
+    }
+  }
+</style>
+
+<div class="content-wapper">
+  <!-- Content Header (Page header) -->
+
+  <!-- /.content-header -->
+
+  <!-- Main content -->
+  <div class="conten">
+    <div class="container-flud">
+      <!-- INSERT HERE INSERT HERE INSERT HERE INSERT HERE INSERT HERE INSERT HERE INSERT HERE INSERT HERE INSERT HERE INSERT HERE INSERT HERE -->
+
+      <div class="container-portofolio">
+        <div class="portfolio">
+          <nav
+            class="navbar navbar-expand-sm navbar-dark fixed-top container-fluid"
+          >
+            <div class="container d-flex justify-content-between">
+              <a class="logo navbar-brand fw-bold fs-5" href=""
+                >Michael:ray{}</a
+              >
+              <div class="navbar-nav mc-auto">
+                <a class="navbar-text nav-link fw-semibold" href="#home"
+                  >Home</a
+                >
+                <a class="navbar-text nav-link fw-semibold" href="#about"
+                  >About</a
+                >
+                <a class="navbar-text nav-link fw-semibold" href="#portfolio"
+                  >Portfolio</a
+                >
+              </div>
+              <a href="https://github.com/michaeldiputra"
+                ><img src="img/github.png" alt=""
+              /></a>
+            </div>
+          </nav>
+
+          <div class="home-container container">
+            <div
+              class="home d-flex justify-content-around align-content-center justify-content-center"
+              id="home"
+            >
+              <div class="text align-self-center">
+                <p>Hello World, I'm</p>
+                <h1 class="text-light">Michael Ray</h1>
+                <span class="auto-type"></span>
+                <p class="text-light dec">
+                  Welcome to My personal website. <span class="wave">👋🏼</span>
+                </p>
+              </div>
+              <div class="pp align-self-center">
+                <img src="./dist/img/me.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div class="about-container container">
+            <div class="about d-flex flex-column w-100" id="about">
+              <div class="about-me rounded-4 w-100">
+                <div
+                  class="about-me-title d-flex justify-content-start text-light"
+                >
+                  <h2>About Me</h2>
+                  <div class="line ms-2"></div>
+                </div>
+                <div
+                  class="about-me-box w-100 d-flex justify-content-between align-items-center"
+                >
+                  <img src="./dist/img/me.jpg" alt="" />
+                  <div
+                    class="about-text d-flex flex-column justify-content-center col-7"
+                  >
+                    <p class="text-1 text-wrap text-white pb-4">
+                      &nbsp; &nbsp; &nbsp; Hi everyone! My name is Michael Ray
+                      Diputra. I'm a web developer from Badung, Bali. I have 1
+                      year experience in the field of web designer. I really
+                      enjoy what I do right now, in my opinion, creating
+                      programs is not just a job, but also an art that has
+                      aesthetic value
+                    </p>
+                    <p class="tex-2 text-wrap text-white">
+                      &nbsp; &nbsp; &nbsp; My job is to build your website to be
+                      functional and user-friendly yet still attractive. In
+                      addition, I provide a personal touch to your product and
+                      ensure that the website catches attention and is easy to
+                      use. My goal is to convey your message and identity in the
+                      most creative way. If you are interested in hiring me,
+                      please contact the listed contact.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="skills d-flex flex-column p-5">
+                <div
+                  class="skills-title d-flex justify-content-start text-light align-items-center"
+                >
+                  <div class="line me-2"></div>
+                  <h2>Skills</h2>
+                </div>
+                <div class="menu-container d-flex justify-content-start">
+                  <div class="menu-box p-2 px-3 rounded-2 me-2" id="techstack">
+                    <p class="text-decoration-none fw-lighter">Tech Stack</p>
+                  </div>
+                  <div class="menu-box p-2 rounded-2" id="tools">
+                    <p class="text-decoration-none">Tools</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <footer class="w-100 d-flex justify-content-end p-3" id="footer">
+            <p class="text-light-emphasis fs-6">
+              Design by <a href="https://bagasrakha.netlify.app/">bagasRakha</a>
+            </p>
+          </footer>
+          <script
+            src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"
+          ></script>
+          <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+          <script src="./dist/js/script.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        </div>
+
+        <!-- /.row -->
+      </div>
+      <!-- /.container-fluid -->
+    </div>
+    <!-- /.content -->
+  </div>
+</div>

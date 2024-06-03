@@ -1,0 +1,167 @@
+@import url("https://fonts.cdnfonts.com/css/chillax");
+:root {
+  --blue: #5f85db;
+  --gray: #1e1e1f;
+}
+
+.portfolio {
+  body {
+    font-family: "Poppins", sans-serif;
+    background: #121212;
+  }
+  .line {
+    width: 50px;
+    height: 2px;
+    background: var(--blue);
+    align-self: center;
+    border-radius: 50px;
+    margin: 0;
+  }
+  element.style {
+    margin-bottom: 0px;
+  }
+  p {
+    margin: 0;
+  }
+  h2 {
+    margin: 0;
+  }
+
+  nav {
+    background: #12121250;
+    height: 96px;
+    backdrop-filter: blur(10px);
+  }
+  .navbar-brand {
+    color: var(--blue);
+    transition: 0.5s ease;
+  }
+  nav img {
+    height: 35px;
+    filter: invert(100%);
+    transition: 0.5s ease;
+  }
+  nav img:hover {
+    filter: invert(70%);
+    transition: 0.5s ease;
+  }
+
+  .home {
+    padding: 6rem 10rem 0;
+    height: 100vh;
+  }
+  .home .text {
+    width: 300px;
+  }
+  .home p {
+    color: var(--blue);
+    margin: 0 0 5px 0;
+    display: flex;
+  }
+  .home span {
+    font-size: 24px;
+    background-image: linear-gradient(
+      to right,
+      #fff,
+      var(--blue)
+    ); /* Warna gradient horizontal */
+    -webkit-background-clip: text; /* Menggunakan efek latar belakang pada teks */
+    background-clip: text;
+    color: transparent; /* Membuat teks asli transparan */
+  }
+  .home p span {
+    color: #fff;
+    font-size: 15px;
+  }
+  .wave {
+    animation-name: wave-animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+  }
+  .home h1 {
+    font-weight: 700;
+  }
+  .home .dec {
+    margin: 11px 0 0 0;
+  }
+  .home img {
+    height: 60vh;
+    border-radius: 50%;
+    border: var(--blue) 4px solid;
+    box-shadow: var(--blue) 0px 0px 70px;
+  }
+
+  .about-me {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 43px;
+    background: var(--gray);
+  }
+  .about-me .line {
+    width: 330px;
+  }
+  .about-me-title {
+    margin: 0 0 19px;
+  }
+  .about-me-box img {
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    margin: 0 50px;
+  }
+  .about-text p {
+    font-size: 18px;
+    margin: 0;
+  }
+
+  .skills .line {
+    width: 87px;
+  }
+  .menu-box-buka {
+    background: #5f84db2b;
+    color: var(--blue) !important;
+  }
+  .menu-box-buka a {
+  }
+  .menu-box:hover {
+    color: #fff !important;
+    transition: 0.3s ease;
+  }
+  .menu-box a {
+    color: #ffffff40;
+    transition: 0.3s ease;
+  }
+
+  footer a {
+    color: #ffdb70;
+  }
+
+  @keyframes wave-animation {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    10% {
+      transform: rotate(14deg);
+    }
+    20% {
+      transform: rotate(-8deg);
+    }
+    30% {
+      transform: rotate(14deg);
+    }
+    40% {
+      transform: rotate(-4deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+    60% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+}
