@@ -68,7 +68,7 @@
                       <tr class="odd">
                         <td style="text-decoration: none; text-align: center;">
                           <a href="edit_siswa.php?id=<?php echo $tampil['nis'] ?>"style="text-decoration: none; text-align: center;" target="_blank">✏️</a>
-                          <a href=""style="text-decoration: none; text-align: center;">⛔</a>
+                          <a href="?page=hapus_siswa"style="text-decoration: none; text-align: center;">⛔</a>
                         </td>
                         <td class="sorting_1 dtr-control" style="text-align: center;">
                           <?php echo $tampil['nis'] ?>

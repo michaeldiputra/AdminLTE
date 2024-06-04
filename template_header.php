@@ -14,7 +14,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <title>SMK Wira Harapan</title>
   <?php include 'partials\stylesheet.php'; ?>
 </head>
-<body class="hold-transition sidebar-mini sidebar-collapse">
+<body class="hold-transition sidebar-mini sidebar-collapse layout-fixed">
 <div class="wrapper">
 
   <!-- Navbar -->

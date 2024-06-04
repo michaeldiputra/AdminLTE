@@ -1,20 +1,34 @@
-<?php 
+<?php
 // Start the session
 session_start();
+include "inc\koneksi.php";
 
 // Check if the user is logged in
 if (!isset($_SESSION['user'])) {
-    header("location: pages\login\login.php"); // Redirect to login page if not logged in
-    exit();
-}
+  // header("location: pages\login\login.php"); // Redirect to login page if not logged in
+  if (!empty($_GET['page'])) {
 
-include 'template_header.php';
-include "inc\koneksi.php";
+    $page = $_GET['page'];
+    switch ($page) {
+      case 'register':
+        include "pages/login/register.php";
+        break;
+      default:
+        include "pages/login/login.php";
+        break;
+    }
+  } else {
+    include "pages/login/login.php";
+  }
+  exit();
+} else
+
+  include 'template_header.php';
 ?>
 
 <!-- Content Wrapper. Contains page content -->
 
-<?php 
+<?php
 if (!empty($_GET['page'])) {
   $page = $_GET['page'];
   switch ($page) {
