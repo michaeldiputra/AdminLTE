@@ -30,6 +30,7 @@
     $alamat_user = $_POST["alamatuser"];
     $notlp_user = $_POST["notlpuser"];
     $repeat_password = $_POST["repeatpassword"];
+    $level = "guest";
 
     // Hash password
     $passwordHash = password_hash($password, PASSWORD_DEFAULT);
@@ -68,12 +69,12 @@
       echo "Your new user ID is: " . $user_id; // Memanggil dan menampilkan ID User
   
       // Masukkan data ke database
-      $sql = "INSERT INTO tbl_pengguna (id_user, nama_user, username, password, alamat_user, notlp_user) VALUES (?, ?, ?, ?, ?, ?)";
+      $sql = "INSERT INTO tbl_pengguna (id_user, nama_user, username, password, alamat_user, notlp_user, level) VALUES (?, ?, ?, ?, ?, ?, ?)";
       $stmt = mysqli_stmt_init($connect);
 
       if (mysqli_stmt_prepare($stmt, $sql)) {
         // Pastikan jumlah parameter sesuai dengan jumlah kolom
-        mysqli_stmt_bind_param($stmt, "ssssss", $user_id, $nama_user, $username, $passwordHash, $alamat_user, $notlp_user); // Enam parameter
+        mysqli_stmt_bind_param($stmt, "sssssss", $user_id, $nama_user, $username, $passwordHash, $alamat_user, $notlp_user, $level); // Enam parameter
         mysqli_stmt_execute($stmt);
         echo "<div class='alert alert-success'>You are registered successfully.</div>";
       } else {
@@ -90,7 +91,7 @@
 
     <div class="card">
       <div class="card-body register-card-body">
-        <p class="login-box-msg">Register a new membership</p>
+        <p class="login-box-msg">Register a new account</p>
 
         <form action="" method="post">
           <div class="input-group mb-3">

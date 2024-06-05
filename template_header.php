@@ -22,4 +22,23 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- /.navbar -->
 
   <!-- Main Sidebar Container -->
-  <?php include 'partials\sidebar.php'; ?>
+  <?php 
+    $username =$_SESSION['user']['nama_user'];
+    $query = "SELECT * FROM tbl_pengguna WHERE nama_user='$username'";
+    //echo $query;
+    $hasil = mysqli_query($connect, $query);
+    $tampil = mysqli_fetch_array($hasil);
+    // echo "level anda adalah " , $tampil['level'];
+  if ($tampil['level'] == "admin") {
+    include 'partials\sidebar.php'; 
+
+  }elseif ($tampil['level'] == "petugas"){
+    include 'partials\sidebar_petugas.php'; 
+    
+  }elseif ($tampil['level'] == "anggota"){
+    include 'partials\sidebar_anggota.php'; 
+  
+  }else{
+    include 'partials\sidebar_guest.php'; 
+  }
+  ?>

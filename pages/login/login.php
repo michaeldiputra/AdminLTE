@@ -32,7 +32,7 @@
         header("Location: /21_michael_adminlte/");
         exit();
       } else {
-        echo "<div class='toastrDefaultError'>Password is incorrect</div>";
+        echo "<div class='alert alert-danger'>Password is incorrect</div>";
       }
     } else {
       echo "<div class='alert alert-danger'>Username does not exist</div>";
