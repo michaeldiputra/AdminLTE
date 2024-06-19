@@ -226,3 +226,5 @@ if ($tampil['level'] == "admin") {
 }else{
   
 }
+
+pages/siswa/hapus_siswa.php?id=<?php echo$tampil['nis']?>

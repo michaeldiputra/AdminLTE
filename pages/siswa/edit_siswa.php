@@ -1,15 +1,29 @@
+<?php
+include("..\inc\koneksi.php");
+$nis = $_GET['id'];
+if (empty($nis)) {
+    // Jika $nis kosong, arahkan ke view_siswa.php
+    header("location:view_siswa.php");
+    exit(); // Pastikan keluar dari skrip setelah mengarahkan
+}
+$query = "select * from tbl_siswa where nis='$nis'";
+  //  echo $query;
+$result = mysqli_query($connect, $query);
+$tampil_siswa = mysqli_fetch_assoc($result);
+?>
+
 <div class="content-wrapper">
   <!-- Content Header (Page header) -->
   <div class="content-header">
     <div class="container-fluid">
       <div class="row mb-2">
         <div class="col-sm-6">
-          <h1 class="m-0">Input Siswa</h1>
+          <h1 class="m-0">Edit Data Siswa</h1>
         </div><!-- /.col -->
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
             <li class="breadcrumb-item"><a href="?page=home">Siswa</a></li>
-            <li class="breadcrumb-item active">Input Siswa</li>
+            <li class="breadcrumb-item active">Edit Data Siswa</li>
           </ol>
         </div><!-- /.col -->
       </div><!-- /.row -->
