@@ -67,8 +67,8 @@
                       ?>
                       <tr class="odd">
                         <td style="text-decoration: none; text-align: center;">
-                          <a href="edit_siswa.php?id=<?php echo $tampil['nis'] ?>"style="text-decoration: none; text-align: center;" target="_blank">✏️</a>
-                          <a href="" style="text-decoration: none; text-align: center;" data-toggle="modal" data-target="#myModal">⛔</a>
+                          <a href="/AdminLTE/?page=edit_siswa&id=<?php echo $tampil['nis'] ?>"style="text-decoration: none; text-align: center;">✏️</a>
+                          <a href="/AdminLTE/?page=hapus_siswa&id=<?php echo $tampil['nis']; ?>" onclick="return confirm('Apakah Anda yakin ingin menghapus siswa ini?')">⛔</a>
                         </td>
                         <td class="sorting_1 dtr-control" style="text-align: center;">
                           <?php echo $tampil['nis'] ?>

@@ -51,6 +51,9 @@ if ($tampil['level'] == "admin") {
       case 'hapus_siswa':
         include "pages/siswa/hapus_siswa.php";
         break;
+      case 'edit_siswa':
+        include "pages/siswa/edit_siswa.php";
+        break;
       case 'portfolio':
         include "pages/home/portfolio.html";
         break;

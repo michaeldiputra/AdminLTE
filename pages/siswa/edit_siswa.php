@@ -1,5 +1,5 @@
 <?php
-include("..\inc\koneksi.php");
+// include("..\inc\koneksi.php");
 $nis = $_GET['id'];
 if (empty($nis)) {
     // Jika $nis kosong, arahkan ke view_siswa.php

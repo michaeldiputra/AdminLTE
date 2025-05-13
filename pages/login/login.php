@@ -29,7 +29,7 @@
       $user_data = mysqli_fetch_assoc($result);       
       if (password_verify($password, $user_data['password'])) {
         $_SESSION['user'] = $user_data;
-        header("Location: /21_michael_adminlte/");
+        header("Location: /AdminLTE/");
         exit();
       } else {
         echo "<div class='alert alert-danger'>Password is incorrect</div>";
